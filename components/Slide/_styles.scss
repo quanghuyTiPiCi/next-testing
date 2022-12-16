@@ -1,0 +1,28 @@
+$numOfParts: 4;
+$animTime: 1s;
+$stagger: 0.08s;
+$sliderReadyTrans: all $animTime/2 $animTime;
+$maxLettersStagger: 6;
+$letterStagger: 0.1s;
+
+@mixin sliderReady {
+  // .s__ready & {
+  @content;
+  // }
+}
+@mixin slidePrev {
+  // .slider.__slides.s__prev & {
+  @content;
+  // }
+}
+
+@mixin slideActive {
+  // .s__active & {
+    @content;
+  // }
+}
+
+@mixin subTextsActiveSlide {
+  opacity: 1;
+  transition: $animTime/2;
+}

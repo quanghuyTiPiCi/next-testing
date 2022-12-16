@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eff0f4;
+  padding: 150px 20px;
+  text-align: left;
+  background-color: rgb(96, 95, 95);
+  /* background-color: #fff; */
+}
+:root {
+  --clr1: #ff0f5b;
+  --clr2: #be01fe;
+  -clr3: #01b4ff;
+}

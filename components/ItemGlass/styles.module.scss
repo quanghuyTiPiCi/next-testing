@@ -1,0 +1,91 @@
+.wrapBox {
+  // background-color: #eeeeee;
+  // position: relative;
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   width: 100%;
+  //   // height: 40%;
+  //   bottom: -10px;
+  //   border-top: 1px solid rgba(255, 255, 255, 0.5);
+  //   background-color: rgba(255, 255, 255, 0.1);
+  //   backdrop-filter: blur(10px);
+  //   z-index: 10;
+  // }
+  .nav {
+    position: relative;
+    display: flex;
+    list-style: none;
+    li {
+      // position: relative;
+      a {
+        margin: 10px;
+        cursor: pointer;
+        position: relative;
+        top: 0;
+        width: 200px;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid rgba(255, 255, 255, 0.4);
+        // border-right: 1px solid rgba(255, 255, 255, 0.2);
+        // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        // background: rgba(255, 255, 255, 0.1);
+        // backdrop-filter: blur(4px);
+        z-index: 1;
+        // box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        overflow: hidden;
+        -webkit-transition: top 0.5s,
+          // z-index 0s,
+          // transform 0.5s,
+          background-color 0.5s;
+        transition: top 0.5s,
+          //  z-index 0s,
+          // transform 0.5s,
+          background-color 0.5s;
+        transition-delay: 0.15s, 
+        // 0.5s, 
+        // 0s, 
+        0.25s;
+        span {
+          font-size: 1.5em;
+          color: #2f495e;
+          transition: 0.25s;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50px;
+          height: 100px;
+          background: rgba(255, 255, 255, 0.5);
+          transform: skewX(45deg) translateX(250px);
+          transition: 0.5s;
+        }
+      }
+      &:hover {
+        a {
+          transition-delay: 0s, 
+          // 0.5s, 
+          // 0.5s, 
+          0s;
+          top: -15px;
+          // transform: translateY(20px);
+          // z-index: 11;
+          background-color: #20b486;
+          span {
+            color: #fff;
+          }
+          &::before {
+            transform: skewX(45deg) translateX(-150px);
+          }
+        }
+      }
+    }
+  }
+}

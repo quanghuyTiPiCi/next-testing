@@ -1,0 +1,89 @@
+.container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 20px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 41% 59% 41% 59% / 36% 29% 71% 64%;
+  &:hover {
+    border-radius: 50%;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+  .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+    h2 {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      background-color: #eff0f4;
+      border-radius: 50%;
+      box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+        inset -2px -5px 10px rgba(255, 255, 255, 1),
+        15px 15px 10px rgba(0, 0, 0, 0.05), 10px 10px 15px rgba(0, 0, 0, 0.025);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+      color: #ff0f5b;
+    }
+    a {
+      position: relative;
+      padding: 10px 25px;
+      background: #ff0f5b;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 25px;
+      font-weight: 500px;
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.025);
+      opacity: 0.75;
+      transition: 0.5s;
+      &:hover {
+        opacity: 1;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65%;
+        height: 5px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+      }
+    }
+  }
+}
