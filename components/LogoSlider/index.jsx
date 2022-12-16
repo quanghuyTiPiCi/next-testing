@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/Logo.svg';
 import { CardMedia } from '@mui/material';
 const LogoSlider = () => {
   return (
