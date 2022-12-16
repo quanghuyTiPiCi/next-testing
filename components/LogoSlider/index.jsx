@@ -1,7 +1,5 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import logo from '../../assets/Logo.svg';
-import { CardMedia } from '@mui/material';
 const LogoSlider = () => {
   return (
     <div className={styles.slider} style={{ transform: 'scale(2)' }}>
@@ -13,7 +11,6 @@ const LogoSlider = () => {
             transform: `rotateY(calc(${(i + 1) * 60}deg))  translateZ(150px)`,
           }}
         >
-          <CardMedia className={styles.img} image={logo.src} alt='' />
         </span>
       ))}
     </div>
